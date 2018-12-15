@@ -1,0 +1,18 @@
+
+
+
+#base
+ori $t1, $0, 160
+#altura
+ori $t2, $0, 120
+
+
+ori $t4, $0, 2 
+
+
+
+mult $t1,$t2
+mflo $t5
+
+div $t5,$t4 
+mflo $t3

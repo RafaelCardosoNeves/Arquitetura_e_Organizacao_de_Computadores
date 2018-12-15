@@ -1,0 +1,28 @@
+
+
+# x
+ori $t5,$zero, 5
+
+
+ori $t1,$zero, 3
+
+#  X**2
+mult $t5, $t5
+mflo $t8
+
+# 3 * (X**2)
+mult $t1, $t8
+mflo $t2
+
+ori $t3,$zero, 5
+
+# 5*X
+mult $t3, $t5
+mflo $t4
+
+ori $t7,$zero, 13
+
+# 3(X**2)-5X
+sub $t6,$t2 ,$4
+# 3(X**2)-5X +13
+add  $t6,$t6 ,$7 
